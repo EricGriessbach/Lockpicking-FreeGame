@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh;
+}
+
+#gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 90vh;
+  position: relative;
+}
+  
+#gameCanvas {
+  display: block;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+#toggleMapping {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+#instructions {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  margin: 0;
+}
+
+#ui {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 1;
+}
+
+.ui-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-element {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px;
+  flex: 1;
+  text-align: center;
+  min-width: 150px;  /* Adjust this value as needed */
+  max-width: 300px;  /* Adjust this value as needed */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;  /* Add this */
+  top: 0;  /* Add this */
+}
+
+
+#registrationForm {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.form-submit {
+  margin-top: 2em;
+}
+  
+  
+#buttonWrapper {
+  background-color: black;  /* Black background */
+  padding: 15px;  /* Padding around the buttons */
+  border-radius: 12px;  /* Rounded corners to match the buttons */
+}  
+  
+#choiceButtons button {
+  background: linear-gradient(to bottom, #FFCC00, #C0C0C0);  /* Dark yellow to black gradient */
+  border: none;
+  border-radius: 12px;
+  color: black !important;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.3s;
+  margin: 10px 10px;  /* Horizontal margin; adjust the value as needed */
+  width: 50%;  /* Make buttons take up the full width of the parent */
+}
+
+#choiceButtons button:hover {
+  background: linear-gradient(to bottom, #C0C0C0, #FFCC00);  /* Black to dark yellow gradient on hover */
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #FFCC00;  /* Dark yellow background */
+  color: #000000;  /* Black text */
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.disable-hover {
+  pointer-events: none;
+  cursor: default;
+}
+
+#freePlayButton:hover .tooltip {
+  display: block;
+}
+#highScoreButton:hover .tooltip {
+  display: block;
+}
+
+  
+  
